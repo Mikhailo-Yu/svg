@@ -7,52 +7,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>SVG</title>
 </head>
 
 <body>
-  <div class="content">
+  <div class="container">
+    <div class="content">
 
-    <div class="figure">
-      <p class="figure__title">Це квадрат</p>
-      <svg class="figure__svg" width="200px" height="200px">
-        <rect class="figure__object" width="195px" height="195px" style="fill:blue;  stroke: red; stroke-width: 5px;" />
-      </svg>
+      <div class="figure">
+        <h2 class="figure__title">Це квадрат</h2>
+        <svg class="figure__svg" width="200px" height="200px">
+          <rect class="figure__object square" width="190px" height="190px" />
+        </svg>
+      </div>
+
+      <div class="figure">
+        <h2 class="figure__title">Це прямокутник</h2>
+        <svg class="figure__svg" width="300px" height="200px">
+          <rect class="figure__object rectangle" width="290px" height="190px" />
+        </svg>
+      </div>
+
+      <div class="figure">
+        <h2 class="figure__title">Це коло</h2>
+        <svg class="figure__svg" width="220px" height="220px">
+          <circle class="figure__object circle" cx="110px" cy="110px" r="105px" />
+        </svg>
+      </div>
+
+      <div class="figure">
+        <h2 class="figure__title">Це еліпс</h2>
+        <svg class="figure__svg" width="300px" height="300px">
+          <ellipse class="figure__object ellipse" cx="150px" cy="150px" rx="40px" ry="100px" />
+        </svg>
+      </div>
+
+      <div class="figure">
+        <h2 class="figure__title">Це не еліпс</h2>
+        <svg class="figure__svg" width="300px" height="300px">
+          <polygon class="figure__object star"
+            points="190.8,172 223,270.9 138.9,209.8 54.8,270.9 86.9,172 2.8,110.9 106.7,110.9 138.9,12 171,110.9 275,110.9 " />
+        </svg>
+      </div>
+
     </div>
-
-    <div class="figure">
-      <p class="figure__title">Це прямокутник</p>
-      <svg class="figure__svg" width="300px" height="300px">
-        <rect class="figure__object" width="250px" height="150px" style="fill:rgb(208, 255, 0);
-    stroke: rgb(43, 255, 0); stroke-width: 5px;" />
-      </svg>
-    </div>
-
-    <div class="figure">
-      <p class="figure__title">Це коло</p>
-      <svg class="figure__svg" width="300px" height="300px">
-        <circle class="figure__object" cx="150px" cy="150px" r="100px" style="fill:rgb(255, 30, 0);
-      stroke: rgb(38, 0, 255); stroke-width: 5px;" />
-      </svg>
-    </div>
-
-    <div class="figure">
-      <p class="figure__title">Це еліпс</p>
-      <svg class="figure__svg" width="300px" height="300px">
-        <ellipse class="figure__object" cx="150px" cy="150px" rx="40px" ry="100px" style="fill:rgb(165, 194, 37);
-  stroke: rgb(255, 0, 191); stroke-width: 5px;" />
-      </svg>
-    </div>
-
-    <div class="figure">
-      <p class="figure__title">Це не еліпс</p>
-      <svg class="figure__svg" width="300px" height="300px">
-        <polygon class="figure__object"
-          points="50 160, 55 180, 70 180, 60 190, 65 205, 50 195, 35 205, 40 190, 30 180, 45 180"
-          style="fill:rgb(165, 194, 37); stroke: rgb(255, 0, 191); stroke-width: 5px;" />
-      </svg>
-    </div>
-
   </div>
 
 </body>
