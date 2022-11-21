@@ -11,10 +11,47 @@
 </head>
 
 <body>
+  <div class="content">
 
-  <svg width="200px" height="200px">
-    <rect width="150px" height="150px" stroke="red" stroke-width="5px" style="fill:blue" />
-  </svg>
+    <div class="figure">
+      <p class="figure__title">Це квадрат</p>
+      <svg class="figure__svg" width="200px" height="200px">
+        <rect class="figure__object" width="195px" height="195px" style="fill:blue;  stroke: red; stroke-width: 5px;" />
+      </svg>
+    </div>
+
+    <div class="figure">
+      <p class="figure__title">Це прямокутник</p>
+      <svg class="figure__svg" width="300px" height="300px">
+        <rect class="figure__object" width="250px" height="150px" style="fill:rgb(208, 255, 0);
+    stroke: rgb(43, 255, 0); stroke-width: 5px;" />
+      </svg>
+    </div>
+
+    <div class="figure">
+      <p class="figure__title">Це коло</p>
+      <svg class="figure__svg" width="300px" height="300px">
+        <circle cx="150px" cy="150px" r="100px" style="fill:rgb(255, 30, 0);
+      stroke: rgb(38, 0, 255); stroke-width: 5px;" />
+      </svg>
+    </div>
+
+    <div class="figure">
+      <p class="figure__title">Це еліпс</p>
+      <svg class="figure__svg" width="300px" height="300px">
+        <ellipse cx="150px" cy="150px" rx="40px" ry="100px" style="fill:rgb(165, 194, 37);
+  stroke: rgb(255, 0, 191); stroke-width: 5px;" />
+      </svg>
+    </div>
+
+    <div class="figure">
+      <p class="figure__title">Це не еліпс</p>
+      <svg class="figure__svg" width="300px" height="300px">
+        <polygon points="50 160, 55 180, 70 180, 60 190, 65 205, 50 195, 35 205, 40 190, 30 180, 45 180"
+          style="fill:rgb(165, 194, 37); stroke: rgb(255, 0, 191); stroke-width: 5px;" />
+      </svg>
+    </div>
+  </div>
 
 </body>
 
